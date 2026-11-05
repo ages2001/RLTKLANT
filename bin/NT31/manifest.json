@@ -1,0 +1,54 @@
+{
+  "format": 1,
+  "target": "nt31",
+  "private_inf": "RLTKNT31.INF",
+  "scope": "Package assembly only; guest validation must identify these exact hashes",
+  "inputs": {
+    "RLTKLANT.SYS": {
+      "bytes": 542208,
+      "sha256": "d754b4eb4a66d4a2cf5d6ba81375c68ef0465ceff1b41bfc8b51974219db31ed"
+    },
+    "RLTSETUP.DLL": {
+      "bytes": 22451,
+      "sha256": "35094bec3a1cbb5d6e4f27b78a0706b038b9ceded88156eb6628ba03bd884f8d"
+    },
+    "RLTUSB.EXE": {
+      "bytes": 12974,
+      "sha256": "9523fada3b23ba58e91f1e5c98f5565698e87cf9cfa0006b7f4b15835999f330"
+    },
+    "DHCPNT31.EXE": {
+      "bytes": 26585,
+      "sha256": "1e889f3dda8860e2bf934cb15963c9fd1f32e0d3b59d86105e47a993d96f03af"
+    }
+  },
+  "template": {
+    "bytes": 26457,
+    "sha256": "97f38a8a296716a9c5cc1c290dfa646b01c58620c6912bf03baed2782c6d1335"
+  },
+  "files": {
+    "DHCPNT31.EXE": {
+      "bytes": 26585,
+      "sha256": "1e889f3dda8860e2bf934cb15963c9fd1f32e0d3b59d86105e47a993d96f03af"
+    },
+    "DISK1": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "OEMSETUP.INF": {
+      "bytes": 26457,
+      "sha256": "c040e5d00285b42e59bda292e507531b00332bea72de12ae0066a3345152b7fc"
+    },
+    "RLTKLANT.SYS": {
+      "bytes": 542208,
+      "sha256": "d754b4eb4a66d4a2cf5d6ba81375c68ef0465ceff1b41bfc8b51974219db31ed"
+    },
+    "RLTSETUP.DLL": {
+      "bytes": 22451,
+      "sha256": "35094bec3a1cbb5d6e4f27b78a0706b038b9ceded88156eb6628ba03bd884f8d"
+    },
+    "RLTUSB.EXE": {
+      "bytes": 12974,
+      "sha256": "9523fada3b23ba58e91f1e5c98f5565698e87cf9cfa0006b7f4b15835999f330"
+    }
+  }
+}

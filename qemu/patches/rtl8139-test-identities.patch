@@ -1,0 +1,33 @@
+--- a/hw/net/rtl8139.c	2026-11-03 10:00:47.925694964 +0300
++++ b/hw/net/rtl8139.c	2026-11-03 10:00:47.944533513 +0300
+@@ -477,6 +477,8 @@
+ 
+     NICState *nic;
+     NICConf conf;
++    /* test identities of OEM boards built on the RTL8139 (0 = Realtek's) */
++    uint16_t x_vendor_id, x_device_id, x_subsys_vendor_id, x_subsys_id;
+ 
+     /* C ring mode */
+     uint32_t   currTxDesc;
+@@ -3366,6 +3368,10 @@
+ 
+     pci_conf = dev->config;
+     pci_conf[PCI_INTERRUPT_PIN] = 1;    /* interrupt pin A */
++    if (s->x_vendor_id) pci_set_word(pci_conf + PCI_VENDOR_ID, s->x_vendor_id);
++    if (s->x_device_id) pci_set_word(pci_conf + PCI_DEVICE_ID, s->x_device_id);
++    if (s->x_subsys_vendor_id) pci_set_word(pci_conf + PCI_SUBSYSTEM_VENDOR_ID, s->x_subsys_vendor_id);
++    if (s->x_subsys_id) pci_set_word(pci_conf + PCI_SUBSYSTEM_ID, s->x_subsys_id);
+     /* TODO: start of capability list, but no capability
+      * list bit in status register, and offset 0xdc seems unused. */
+     pci_conf[PCI_CAPABILITY_LIST] = 0xdc;
+@@ -3414,6 +3420,10 @@
+ 
+ static Property rtl8139_properties[] = {
+     DEFINE_NIC_PROPERTIES(RTL8139State, conf),
++    DEFINE_PROP_UINT16("x-vendor-id", RTL8139State, x_vendor_id, 0),
++    DEFINE_PROP_UINT16("x-device-id", RTL8139State, x_device_id, 0),
++    DEFINE_PROP_UINT16("x-subsys-vendor-id", RTL8139State, x_subsys_vendor_id, 0),
++    DEFINE_PROP_UINT16("x-subsys-id", RTL8139State, x_subsys_id, 0),
+     DEFINE_PROP_END_OF_LIST(),
+ };
+ 

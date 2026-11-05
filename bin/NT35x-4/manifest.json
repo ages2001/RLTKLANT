@@ -1,0 +1,46 @@
+{
+  "format": 1,
+  "target": "nt35",
+  "private_inf": "RLTKNT35.INF",
+  "scope": "Package assembly only; guest validation must identify these exact hashes",
+  "inputs": {
+    "RLTKLANT.SYS": {
+      "bytes": 539249,
+      "sha256": "b6f24607aea3b9360587bdc85cdd18f6007d638b99ec8ae45ebda77167b8033c"
+    },
+    "RLTSETUP.DLL": {
+      "bytes": 22451,
+      "sha256": "04bbf1bf056e8b735db20a324c2e6912b2001ad6a78f8cd523d28086ad965fa2"
+    },
+    "RLTUSB.EXE": {
+      "bytes": 12974,
+      "sha256": "9523fada3b23ba58e91f1e5c98f5565698e87cf9cfa0006b7f4b15835999f330"
+    }
+  },
+  "template": {
+    "bytes": 23995,
+    "sha256": "768203409ff863af5ee28b25314030263bda8bf45d78c986b89ea404a09b4e0c"
+  },
+  "files": {
+    "DISK1": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "OEMSETUP.INF": {
+      "bytes": 23995,
+      "sha256": "75a841893586f2403a9e7fa551fe0cd917ae7b0f499d98a2b38b77e1747b46ed"
+    },
+    "RLTKLANT.SYS": {
+      "bytes": 539249,
+      "sha256": "b6f24607aea3b9360587bdc85cdd18f6007d638b99ec8ae45ebda77167b8033c"
+    },
+    "RLTSETUP.DLL": {
+      "bytes": 22451,
+      "sha256": "04bbf1bf056e8b735db20a324c2e6912b2001ad6a78f8cd523d28086ad965fa2"
+    },
+    "RLTUSB.EXE": {
+      "bytes": 12974,
+      "sha256": "9523fada3b23ba58e91f1e5c98f5565698e87cf9cfa0006b7f4b15835999f330"
+    }
+  }
+}

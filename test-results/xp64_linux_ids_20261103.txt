@@ -1,0 +1,77 @@
+== XP x64 (pc), debug-trace build of the 2026-11-03 sources
+agent finished                                                                             PASS
+installed PCI\VEN_1186&DEV_4300                                                            PASS
+installed PCI\VEN_1186&DEV_1300                                                            PASS
+installed PCI\VEN_10EC&DEV_8129                                                            PASS
+installed PCI\VEN_0001&DEV_8139&SUBSYS_813910EC                                            PASS
+installed USB\VID_17EF&PID_7205                                                            PASS
+DHCP 10.0.3.15: D-Link DGE-528T (1186:4300, RTL8169 under an OEM id)                       PASS
+ping 10.0.3.2                                                                              PASS
+DHCP 10.0.4.15: D-Link DFE-538TX (1186:1300, RTL8139 under an OEM id)                      PASS
+ping 10.0.4.2                                                                              PASS
+DHCP 10.0.5.15: 10EC:8129 with an RTL8139 XID (8139 backend)                               PASS
+ping 10.0.5.2                                                                              PASS
+DHCP 10.0.6.15: 10EC:8129 with an RTL8169 XID (C+ backend)                                 PASS
+ping 10.0.6.2                                                                              PASS
+DHCP 10.0.7.15: RTL8139 with the broken vendor id 0001                                     PASS
+ping 10.0.7.2                                                                              PASS
+DHCP 10.0.8.15: Lenovo 17EF:7205 RTL8153, CDC ECM first configuration (in-box EHCI)        PASS
+ping 10.0.8.2                                                                              PASS
+
+      3 8129 XID 0x00000748: RTL8129 (8139 backend)
+      5 backend=0x00000001 did=0x00001300
+      3 backend=0x00000001 did=0x00008129
+      2 backend=0x00000001 did=0x00008139
+      6 backend=0x00000002 did=0x00004300
+      4 backend=0x00000002 did=0x00008129
+
+FSTEST dev Net | Realtek RTL8139C+ Fast Ethernet | svc=RLTKLANT | prob=0 | PCI\VEN_0001&DEV_8139&SUBSYS_813910EC&REV_20\3&267A616A&0&40 | parent=ACPI\PNP0A03\0
+FSTEST dev Net | Realtek RTL8139C+ Fast Ethernet | svc=RLTKLANT | prob=0 | PCI\VEN_10EC&DEV_8129&SUBSYS_11001AF4&REV_20\3&267A616A&0&30 | parent=ACPI\PNP0A03\0
+FSTEST dev Net | Realtek RTL8139C+ Fast Ethernet | svc=RLTKLANT | prob=0 | PCI\VEN_1186&DEV_1300&SUBSYS_11001AF4&REV_20\3&267A616A&0&28 | parent=ACPI\PNP0A03\0
+FSTEST dev Net | Realtek RTL8153 USB Gigabit Ethernet (rev 5C10) | svc=RLTKLANT | prob=0 | USB\VID_17EF&PID_7205\0153-0000:00:03.0-1 | parent=USB\ROOT_HUB20\4&2247E163&0
+FSTEST dev Net | Realtek RTL8169sc/8110sc Gigabit Ethernet | svc=RLTKLANT | prob=0 | PCI\VEN_10EC&DEV_8129&SUBSYS_11001AF4&REV_10\3&267A616A&0&38 | parent=ACPI\PNP0A03\0
+FSTEST dev Net | Realtek RTL8169sc/8110sc Gigabit Ethernet | svc=RLTKLANT | prob=0 | PCI\VEN_1186&DEV_4300&SUBSYS_11001AF4&REV_10\3&267A616A&0&20 | parent=ACPI\PNP0A03\0
+
+== XP x64 (pc), RTL9151AS profile + Accton
+agent finished                                                                             PASS
+installed PCI\VEN_10EC&DEV_8125                                                            PASS
+installed PCI\VEN_1113&DEV_1211                                                            PASS
+DHCP 10.0.3.15: RTL9151AS (extended XID 0x7c8, TX_CONFIG_V2 = 0)                           PASS
+ping 10.0.3.2                                                                              PASS
+DHCP 10.0.4.15: Accton EN-1207D (1113:1211, RTL8139 under an OEM id)                       PASS
+ping 10.0.4.2                                                                              PASS
+   Description . . . . . . . . . . . : Realtek RTL8139C+ Fast Ethernet
+   Description . . . . . . . . . . . : Realtek RTL9151AS 2.5GbE Controller
+
+== XP x64, USBNT xHCI, CDC-first adapter
+agent finished                                                                             PASS
+USBNT chose the vendor configuration                                                       PASS
+installed USB\VID_17EF&PID_7205                                                            PASS
+DHCP 10.0.3.15: Lenovo 17EF:7205 RTL8153, CDC ECM first configuration (USBNT xHCI)         PASS
+ping 10.0.3.2                                                                              PASS
+usbnt: device 0: vendor configuration 2 (index 1) instead of CDC 06
+USBNT chose the vendor configuration                                                       PASS
+
+== XP x64 (pc), release driver bin/2KXP/amd64/RLTKLANT.SYS (fafed4327ca0592a...)
+agent finished                                                                             PASS
+installed PCI\VEN_1186&DEV_4300                                                            PASS
+installed PCI\VEN_1186&DEV_1300                                                            PASS
+installed PCI\VEN_10EC&DEV_8129                                                            PASS
+installed PCI\VEN_0001&DEV_8139&SUBSYS_813910EC                                            PASS
+installed USB\VID_17EF&PID_7205                                                            PASS
+DHCP 10.0.3.15: D-Link DGE-528T (1186:4300, RTL8169 under an OEM id)                       PASS
+ping 10.0.3.2                                                                              PASS
+DHCP 10.0.4.15: D-Link DFE-538TX (1186:1300, RTL8139 under an OEM id)                      PASS
+ping 10.0.4.2                                                                              PASS
+DHCP 10.0.5.15: 10EC:8129 with an RTL8139 XID (8139 backend)                               PASS
+ping 10.0.5.2                                                                              PASS
+DHCP 10.0.6.15: 10EC:8129 with an RTL8169 XID (C+ backend)                                 PASS
+ping 10.0.6.2                                                                              PASS
+DHCP 10.0.7.15: RTL8139 with the broken vendor id 0001                                     PASS
+ping 10.0.7.2                                                                              PASS
+DHCP 10.0.8.15: Lenovo 17EF:7205 RTL8153, CDC ECM first configuration (in-box EHCI)        PASS
+ping 10.0.8.2                                                                              PASS
+
+QEMU 8.2.2 (TCG) with qemu/hw-net/rtl8169.c, qemu/hw-usb/dev-rtl8153.c and
+qemu/patches/rtl8139-test-identities.patch; tests/w5rltk.py. Emulated chips under
+test identities, not the physical OEM boards.
